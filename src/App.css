@@ -1,7 +1,37 @@
 .App {
   text-align: center;
 }
-
+.Mybutton
+{
+  width: 100px;
+  height: 20px;
+  background-color:#006400;
+  color:cornflowerblue;
+}
+.input1
+{
+  background-color: darkmagenta;
+}
+.input2
+{
+  background-color: rgb(229, 255, 0);
+}
+.input3
+{
+  background-color: rgb(0, 60, 255);
+}
+.input4
+{
+  background-color: rgb(0, 204, 255);
+}
+.input5
+{
+  background-color: rgb(177, 120, 34);
+}
+.input6
+{
+  background-color: rgb(21, 255, 0);
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
