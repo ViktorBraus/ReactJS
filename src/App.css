@@ -4,12 +4,13 @@
 .Mybutton
 {
   width: 100px;
-  height: 20px;
+  height: 25px;
   background-color:#006400;
   color:cornflowerblue;
 }
 .input1
 {
+  font: white;
   background-color: darkmagenta;
 }
 .input2

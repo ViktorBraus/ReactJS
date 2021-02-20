@@ -1,35 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
-const title = "Submit"
-const input1 = ({ title }) => 
-(
-  <div>
-  </div>
-);
-const Button = ({ title }) => 
-(
-    <p>Hello World</p>
-);
-function App() {
-  return (
+const App = () => 
+  (
     <div className="App">
       <header className="App-header">
-        <input className="input1"></input>
-        <input className="input2"></input>
-        <input className="input3"></input>
-        <input className="input4"></input>
-        <input className="input5"></input>
-        <input className="input6"></input>
-        <input className="input7"></input>
-        <input className="input8"></input>
-        <input className="input9"></input>
-        <input className="input10"></input>
-        <button 
-        className = "Mybutton"
-        type="submit"
-        const = "Button"
+        <Input 
+        class1="input1"
+        class2="input2"
+        class3="input3"
+        class4="input4"
+        class5="input5"
+        class6="input6"
         >
-        </button>
+        </Input>
+        <Button classn="Mybutton" title="Submit" name="Hello world!">
+        </Button>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -45,6 +30,30 @@ function App() {
       </header>
     </div>
   );
-}
+  const Input = ({class1, class2,class3,class4, class5,class6}) => 
+  (
+      <div>
+        <input className={class1}></input>
+        <input className={class2}></input>
+        <p></p>
+        <input className={class3}></input>
+        <input className={class4}></input>
+        <p></p>
+        <input className={class5}></input>
+        <input className={class6}></input>
+        <p></p>
+        <input className={class1}></input>
+        <input className={class2}></input>
+        <p></p>
+        <input className={class3}></input>
+        <input className={class4}></input>
+      </div>
+  );
 
+const Button = ({ classn, title,name }) => 
+(
+  <div>
+    <button className={classn} type={title}>{name}</button>
+  </div>
+);
 export default App;
