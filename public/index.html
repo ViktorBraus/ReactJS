@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -39,5 +42,28 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script type="text/babel">
+      class ClickButton extends React.Component 
+      {
+         constructor(props) {
+             super(props);
+             this.state = {class: "off", label: "Нажми"};
+               
+             this.press = this.press.bind(this);
+         }
+         press(){
+             let className = (this.state.class==="off")?"on":"off";
+             this.setState({class: className});
+         }
+         render() {
+             return <button onClick={this.press} className={this.state.class}>{this.state.label}</button>;
+         }
+     }
+     ReactDOM.render(
+         <CoreComponent/>,
+         document.getElementById("app")
+     )
+  </script>
   </body>
+  
 </html>
